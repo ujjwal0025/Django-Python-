@@ -1,0 +1,23 @@
+{% extends 'blog/base.html' %}
+{% block title %}MY STORE{% endblock %}
+
+{% block body %}
+
+
+{% for items in allblog %}
+<div class="container">
+    
+    <h1>{{items.blog_id}}:{{items.title}}</h1>
+    <h3>{{items.heading1}}</h3>
+    <p>{{items.cont_heading1}}</p>
+    <h5>{{items.heading2}}</h5>
+    <p>{{items.cont_heading2}}</p>
+    
+
+</div>
+
+
+{% endfor %}
+
+.
+{% endblock %}

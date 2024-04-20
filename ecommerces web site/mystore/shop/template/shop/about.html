@@ -1,0 +1,40 @@
+{% extends 'shop/base.html' %}
+
+{% block title %}ABOUT PAGE{% endblock %}
+
+{% block css%}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  @media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+      font-size: 3.5rem;
+    }
+  }
+
+  {% endblock %}
+
+
+{% block body %}
+
+<main role="main">
+
+    <section class="jumbotron text-center">
+      <div class="container">
+        <h1>ABOUT US</h1>
+        <p class="lead text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quo libero ad nulla distinctio sunt dolor culpa repellendus iste ipsum explicabo adipisci itaque dolore porro placeat nisi id expedita, nobis iusto. Temporibus esse perferendis expedita dolor culpa adipisci, at exercitationem molestiae totam quod officiis modi quasi perspiciatis tempore natus dolore sint aliquam magni consectetur!
+        </p>
+        <p>
+          <a href="/shop" class="btn btn-primary my-2">HOME</a>
+          <a href="/shop/contact/" class="btn btn-secondary my-2">CONTACT US</a>
+        </p>
+      </div>
+    </section>
+  {% endblock %}
