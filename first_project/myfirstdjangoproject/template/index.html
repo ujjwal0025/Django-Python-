@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY COMPANY</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-image: linear-gradient(to right, rgb(125, 125, 219), lightblue);
+            color: white;
+
+
+        }
+
+        .nav {
+            background-color: rgb(249, 248, 246);
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            box-shadow: 0 0 30px(22, 21, 21);
+        }
+
+        h3 {
+            font-size: x-large;
+            display: inline-flex;
+            width: 25%;
+            cursor: pointer;
+            padding: 2px;
+            color: crimson
+        }
+
+        a {
+            width: 25%;
+            padding-left: 10%;
+            text-decoration: none;
+            font-size: x-large;
+            color: rgb(2, 2, 2);
+
+        }
+
+        h3:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+
+        .btn {
+            color: rgb(11, 10, 10);
+            background-color: rgb(240, 240, 247);
+            font-size: larger;
+            padding: 5px;
+            border-radius: 25px;
+            border-color: crimson;
+            display: flex;
+            justify-items: center;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: black;
+            color: crimson;
+        }
+
+        h2 {
+
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        form {
+            padding: 10px;
+            padding-left: 20%;
+        }
+
+        /*toggle switch css  */
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 40px;
+            height: 18px;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 11px;
+            width: 12px;
+            left: 4px;
+            bottom: 4px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
+
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked+.slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(20px);
+
+        }
+
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before { 
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <h3>My company</h3>
+        <a href="/"> Home </a>
+        <a href="/"> About Us </a>
+        <a href="/"> Contact Us </a>
+    </div>
+    <h2>welcome to the text anyaliser page ... Enter the text and start ...</h2>
+    <form action="/analiyses" method="get">
+        <textarea name="text" cols="30" rows="10"
+            style="width: 953px; height: 320px; display: block; margin-bottom: 10px;"></textarea>
+
+
+
+        <label class="switch">
+            <input type="checkbox" name="removepunc"> remove punchuation
+            <span class="slider round"></span>
+        </label>
+
+        <br>
+        <label class="switch">
+            <input type="checkbox" name="caps">UPPERCASE
+            <span class="slider round"></span>
+        </label>
+        <br><br>
+
+        <button type="submit" class="btn"> anyalise text </button>
+    </form>
+
+</body>
+
+</html>
